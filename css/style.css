@@ -210,6 +210,41 @@ section.about .social a img:hover{
 
 }
 
+section.contact .container{
+    text-align: center;
+}
+#status{
+    width: 90%;
+    max-width: 500%;
+    text-align: center;
+    padding:10px;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+#status.success{
+    background-color: rgb(201, 253, 95);
+    animation: status 4s ease forwards;
+}
+#status.error{
+    background-color: rgb(248, 66, 66);
+    color:var(--pure);
+    animation: status 4s ease forwards;
+}
+@keyframes status{
+    0% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
 section.contact .container p{
     margin-bottom: 4rem;
 }
@@ -264,6 +299,7 @@ section.contact .input-wrap-2 textarea{
     padding:0.5rem;
     border:1px solid var(--ternary);
     font-size: 2.5rem;
+    resize: vertical;
 }
 
 section.contact .input-wrap-2 textarea:focus{
@@ -306,7 +342,7 @@ footer .social a:hover{
 footer{
     background:var(--dark);
     text-align:center;
-    padding:5rem 0;
+    padding:0 0;
 }
 
 footer .footer-logo{
@@ -508,3 +544,4 @@ footer .capyright{
 .sls h1{
     text-align: center;
 }
+
