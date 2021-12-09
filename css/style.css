@@ -305,13 +305,13 @@ section.contact .input-wrap-2 textarea{
 section.contact .input-wrap-2 textarea:focus{
     outline:none;
     color:var(--primary);
-    text-shadow: 2px 2px 0.5px #000000;
+    text-shadow: 2px 2px 15px var(--primary);
 }
 
 section.contact input:focus, section.contact .input-wrap-2:focus{
     outline:none;
     color:var(--primary);
-    text-shadow: 2px 2px 0.5px #000000;
+    text-shadow: 2px 2px 15px var(--primary);
     font-weight: 1200;
 }
 
