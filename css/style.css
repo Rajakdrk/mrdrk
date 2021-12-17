@@ -251,7 +251,7 @@ section.contact .container p{
 
 section.contact .card-wrapper{
     display:grid;
-    grid-template-columns:repeat(3, 1fr);
+    grid-template-columns:repeat(4, 1fr);
     grid-gap:3rem;
     margin-bottom: 4rem;
 }
@@ -446,6 +446,150 @@ footer .capyright{
     background: var(--dark);
 }
 
+
+/* Progress section style */
+section.contact .skill{
+    width: 160px;
+    height: 160px;
+    margin-left: 30%;
+}
+section.contact .skill2{
+    width: 160px;
+    height: 160px;
+    margin-left: 30%;
+}
+section.contact .skill3{
+    width: 160px;
+    height: 160px;
+    margin-left: 30%;
+}
+section.contact .skill4{
+    width: 160px;
+    height: 160px;
+    margin-left: 30%;
+}
+
+section.contact .outer{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7)
+}
+
+section.contact .inner{
+    width:120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+}
+
+section.contact .inner #number{
+    font-weight: 600;
+    color: var(--dark);
+}
+section.contact .inner #number2{
+    font-weight: 600;
+    color: var(--dark);
+}
+section.contact .inner #number3{
+    font-weight: 600;
+    color: var(--dark);
+}
+section.contact .inner #number4{
+    font-weight: 600;
+    color: var(--dark);
+}
+
+section.contact .skill circle{
+    fill:none;
+    stroke: var(--primary);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+}
+section.contact .skill2 circle{
+    fill:none;
+    stroke: var(--primary);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim2 2s linear forwards;
+}
+section.contact .skill3 circle{
+    fill:none;
+    stroke: var(--primary);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim3 2s linear forwards;
+}
+section.contact .skill4 circle{
+    fill:none;
+    stroke: var(--primary);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim4 2s linear forwards;
+}
+
+section.contact .skill svg{
+    position:absolute;
+    margin-top: -158px;
+    margin-left: -79px;
+}
+section.contact .skill2 svg{
+    position:absolute;
+    margin-top: -158px;
+    margin-left: -79px;
+}
+section.contact .skill3 svg{
+    position:absolute;
+    margin-top: -158px;
+    margin-left: -79px;
+}
+section.contact .skill4 svg{
+    position:absolute;
+    margin-top: -158px;
+    margin-left: -79px;
+}
+
+@keyframes anim{
+    100%{
+        stroke-dashoffset: 94;
+    }
+}
+@keyframes anim2{
+    100%{
+        stroke-dashoffset: 141;
+    }
+}
+@keyframes anim3{
+    100%{
+        stroke-dashoffset: 236;
+    }
+}
+@keyframes anim4{
+    100%{
+        stroke-dashoffset: 236;
+    }
+}
+
+section.contact h2{
+    padding-top: 20px;
+}
+
+/* Progress section ending */
+
 @media (max-width:1024px){
     header #main-nav{
         display:none;
@@ -512,11 +656,37 @@ footer .capyright{
         background: var(--pure);
         width: 89%;
     }
-    section.contact .card-wrapper {
-        grid-template-columns: repeat(1, 1fr);
-    }
     section.contact input{
         font-size:1rem;
+    }
+    section.contact h1{
+        font-size: 20px;
+    }
+    section.contact .card-wrapper{
+        grid-gap:4rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    section.contact .skill{
+        margin-left: 5%;
+    }
+    section.contact .skill2{
+        margin-left: -11%;
+    }
+    section.contact .skill3{
+        margin-left: 5%;
+    }
+    section.contact .skill4{
+        margin-left: -11%;
+    }
+    section.contact .card-wrapper .card img{
+        height: 25px;
+        width: 25px;
+    }
+    section.contact .card-wrapper .card h1{
+        font-size:10px;
+    }
+    section.contact .card-wrapper .card h6{
+        font-size: 10px;
     }
     section.contact .input-wrap-2 textarea{
         font-size: 1rem;
@@ -533,10 +703,14 @@ footer .capyright{
         font-size: 20px;
     }
     section {
-        padding: 2rem 0;
+        padding: 3rem 0;
     }
     footer .social a{
         background:var(--primary);
+    }
+    footer .social a img{
+        height: 70px;
+        width: 60px;
     }
 }
 
@@ -544,4 +718,3 @@ footer .capyright{
 .sls h1{
     text-align: center;
 }
-
