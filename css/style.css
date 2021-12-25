@@ -319,6 +319,9 @@ section.contact .btn-wrapper{
     text-align: center;
     margin-top:2rem;
 }
+section.contact .wlink{
+    text-decoration: none;
+}
 
 footer .social a{
     background: var(--dark);
