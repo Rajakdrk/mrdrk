@@ -1,2 +1,5 @@
 # mrdrk.github.io
-My Portfolio Webpage
+This is web based static web page.
+This is my Profolio.
+
+It contains all information about me.
