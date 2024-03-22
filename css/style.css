@@ -721,3 +721,9 @@ section.contact h2{
 .sls h1{
     text-align: center;
 }
+
+
+#seeAllCertificates{
+    color: var(--primary);
+    font-size: x-large;
+}

@@ -1,0 +1,43 @@
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --ternary:#898989;
+    --pure:#FFFFFF;
+    --light:#F2F2F2;
+    --secondary:#070606;
+}
+
+h1{
+    text-align: center;
+}
+
+.projects{
+    border: 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+    
+.project{
+    height: 480px;
+    width: 48%;
+    border: 1px solid var(--primary);
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 6%;
+}
+
+.project img{
+    width:98%;
+    height: 300px;
+    border-radius: 6%;
+    margin: 5px;
+}
+
+.project h3{
+    margin: 5px;
+}
+.project h3 span{
+    color: var(--primary);
+    font-size: large;
+}
